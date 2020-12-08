@@ -1,6 +1,6 @@
 import React from 'react';
 
-import myPhoto from './Cat.jpg' // !
+import myPhoto from './images/Cat.jpg' // !
 
 export default function MyPersonalPage(props) {
 
