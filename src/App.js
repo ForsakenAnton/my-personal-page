@@ -1,23 +1,29 @@
 import logo from './logo.svg';
 import './App.css';
+import MyPersonalPage from './MyPersonalPage';
 
 function App() {
+
+const myInfo = {
+  name: "Anton",
+  surname: "Vladimirovich",
+  lastname: "Belukha",
+  phone: "+380974572106",
+  gmail: "forsakenanton@gmail.com",
+  city: "Krivoy Rog",
+  workExperience: "12 years",
+  skills: [
+    "skill one",
+    "skill two",
+    "skill three",
+  ],
+  photo: "./Cat.jpg"
+}
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h2>My personal page</h2>
+      <MyPersonalPage myInfo={myInfo}></MyPersonalPage>
     </div>
   );
 }
